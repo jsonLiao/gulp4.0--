@@ -1,0 +1,27 @@
+
+.contianer {
+  padding-top: 1.02rem;
+  .content-s {
+    .title {
+      line-height: 0.4rem;
+      font-size: 0.36rem;
+      color: #535353;
+      text-align: center;
+    }
+    .news-cont {
+      padding: 0.3rem;
+      & > p {
+        line-height: 0.6 !important;
+        font-size: 0.16rem!important;
+        & > span {
+          font-size: 0.16rem!important;
+        }
+      }
+    }
+    .news-cont img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+}

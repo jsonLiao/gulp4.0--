@@ -1,0 +1,113 @@
+<!-- 整体块 s-->
+{% extends 'public/layout.html' %}
+
+<!-- 主内容 s-->
+{% block content %}
+
+@@include('./public/header.html')
+
+<!-- content s -->
+<div class="content">
+  <div class="groupbg">
+    <img class="loadimg" src="./images/blank.gif" data-src="./images/index/ins_01.jpg" alt="">
+    <div class="download-box">
+      <a target="_blank" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.jingxuansugou.app"
+        class="dm dl-btn ios-dl-btn">
+        <i class="icon icon-ios"></i>
+        <span>IOS下载</span>
+      </a>
+      <a target="_blank" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.jingxuansugou.app"
+        class="dm dl-btn ios-dl-btn">
+        <i class="icon icon-andriod"></i>
+        <span>Andriod下载</span>
+      </a>
+    </div>
+  </div>
+  <div class="groupbg">
+    <img class="loadimg" src="./images/blank.gif" data-src="./images/index/ins_02.jpg" alt="">
+  </div>
+  <div class="groupbg">
+    <img class="loadimg" src="./images/blank.gif" data-src="./images/index/ins_03.jpg" alt="">
+  </div>
+  <div class="groupbg">
+    <img class="loadimg" src="./images/blank.gif" data-src="./images/index/ins_04.jpg" alt="">
+  </div>
+  <div class="groupbg">
+    <img class="loadimg" src="./images/blank.gif" data-src="./images/index/ins_05.jpg" alt="">
+  </div>
+  <div class="groupbg">
+    <img class="loadimg" src="./images/blank.gif" data-src="./images/index/ins_06.jpg" alt="">
+  </div>
+  <div class="groupbg">
+    <img class="loadimg" src="./images/blank.gif" data-src="./images/index/ins_07.jpg" alt="">
+  </div>
+  <div class="news">
+    <div class="inner">
+      <div class="box-hd">
+        <h6>最新动态</h6>
+        <p>最新的活动、新闻动态、精彩课程、就在这里等您!</p>
+      </div>
+      <div class="box-bd">
+        <ul>
+          <li>
+            <a class="z-flex" href="#">
+              <div class="pic"><img class="loadimg" src="./images/blank.gif" data-src="./images/index/news_01.jpg"
+                  alt=""></div>
+              <div class="info z-flex-item">
+                <div class="desc">
+                  重大消息！精选速购受邀出席国家级商务会议
+                </div>
+                <div class="z-flex">
+                  <div class="date z-flex-item">2018-12-28</div>
+                  <span class="enter">查看全文&gt;</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="z-flex" href="#">
+              <div class="pic"><img class="loadimg" src="./images/blank.gif" data-src="./images/index/news_02.jpg"
+                  alt=""></div>
+              <div class="info z-flex-item">
+                <div class="desc">
+                  精选速购X李维嘉代言人签约会隆重召开
+                </div>
+                <div class="z-flex">
+                  <div class="date z-flex-item">2018-12-28</div>
+                  <span class="enter">查看全文&gt;</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="z-flex" href="#">
+              <div class="pic"><img class="loadimg" src="./images/blank.gif" data-src="./images/index/news_03.jpg"
+                  alt=""></div>
+              <div class="info z-flex-item">
+                <div class="desc">
+                  精选速购万店连锁“谋变”，首轮城市合伙人签约会火爆
+                </div>
+                <div class="z-flex">
+                  <div class="date z-flex-item">2018-12-28</div>
+                  <span class="enter">查看全文&gt;</span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="box-fd">
+        <a class="more" href="/brand.html">查看全部新闻</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- content e -->
+
+@@include('./public/footer.html')
+
+{% endblock %}
+
+<!-- 主内容 s-->
+
+<!-- 整体块 e-->

@@ -1,0 +1,103 @@
+<!-- 整体块 -->
+{% extends 'public/layout.html' %}
+
+<!-- 主内容 -->
+{% block content %}
+
+@@include('./public/header.html')
+
+<div class="content">
+  <!-- banner -->
+  <div class="banner">
+    <img src="images/brand/brand_header.jpg" alt="" />
+  </div>
+  <!-- contianer -->
+  <div class="contianer">
+    <a class="lwj-box">
+      <img src="images/brand/item_1.jpg" alt="" />
+      <p>李维嘉签约仪式现场</p>
+    </a>
+    <div class="pic-box">
+      <div class="pic_list">
+        <a class="p_item">
+          <div class="img"><img src="images/brand/item_2.jpg" alt="" /></div>
+          <p>万店连锁启动仪式</p>
+        </a>
+        <a class="p_item">
+          <div class="img"><img src="images/brand/item_3.jpg" alt="" /></div>
+          <p>2016年全国巡演培训</p>
+        </a>
+        <a class="p_item">
+          <div class="img"><img src="images/brand/item_4.jpg" alt="" /></div>
+          <p>2018年品牌招商会现场</p>
+        </a>
+        <a class="p_item">
+          <div class="img"><img src="images/brand/item_5.jpg" alt="" /></div>
+          <p>2018年同城线下交流会</p>
+        </a>
+      </div>
+      <p class="more-tips">更多活动敬请期待...</p>
+    </div>
+    <!-- 二级标题 -->
+    <div class="news-box">
+      <div class="sub_title line">最新动态</div>
+      <div class="article_list">
+        <ul class="a_list">
+          <li class="a_item">
+            <a href="about.html" class="link_c">
+              <div class="hd">
+                <img src="images/brand/item_1.jpg" alt="" />
+              </div>
+              <div class="art-info">
+                <h4>精选速购品牌合作强势升级，重塑社交电商生态链</h4>
+                <div class="fd">
+                  <div class="time">2018-12-01</div>
+                  <div class="more-btn"> 查看全文> </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="a_item">
+            <a href="about.html" class="link_c">
+              <div class="hd">
+                <img src="images/brand/item_1.jpg" alt="" />
+              </div>
+              <div class="art-info">
+                <h4>精选速购品牌合作强势升级，重塑社交电商生态链</h4>
+                <div class="fd">
+                  <div class="time">2018-12-01</div>
+                  <div class="more-btn"> 查看全文> </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="a_item">
+            <a href="about.html" class="link_c">
+              <div class="hd">
+                <img src="images/brand/item_1.jpg" alt="" />
+              </div>
+              <div class="art-info">
+                <h4>精选速购品牌合作强势升级，重塑社交电商生态链</h4>
+                <div class="fd">
+                  <div class="time">2018-12-01</div>
+                  <div class="more-btn"> 查看全文> </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="pagination">
+      <ul class="p_pages">
+        <li class="active">1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+@@include('./public/footer.html')
+
+{% endblock %}

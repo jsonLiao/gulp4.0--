@@ -1,0 +1,30 @@
+
+.banner {
+  width: 100%;
+  height: 2.5rem;
+  img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+  }
+}
+.contianer {
+  position: relative;
+  margin-top: 0.55rem;
+  padding: 0 0.4rem;
+  .item {
+    margin-bottom: 0.5rem;
+    h4 {
+      line-height: 0.32rem;
+      font-size: 0.3rem;
+      color: #333;
+      margin-bottom: 0.15rem;
+      font-weight:500;
+    }
+    p {
+      line-height: 0.4rem;
+      font-size: 0.24rem;
+      color: #626262;
+    }
+  }
+}

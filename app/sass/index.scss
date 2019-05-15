@@ -1,0 +1,196 @@
+.download-box {
+  position: absolute;
+  right: 9.1%;
+  top: 43.65%;
+  width: 1.8rem;
+  white-space: nowrap;
+
+  .dl-btn {
+    display: block;
+    vertical-align: top;
+    width: 1.8rem;
+    height: 0.42rem;
+    line-height: 0.42rem;
+    margin-bottom: 0.09rem;
+    background-color: #00c1d5;
+    border-radius: 0.21rem;
+    font-size: 0.17rem;
+    .icon {
+      margin-left: 0.2rem;
+      margin-right: 0.12rem;
+      width: 0.24rem;
+      height: 0.26rem;
+    }
+
+    .icon-ios {
+      background-position: -1.48rem 0;
+    }
+
+    .icon-andriod {
+      background-position: -1.23rem 0;
+    }
+  }
+}
+
+.news {
+  background: #fefefe;
+
+  .box-hd {
+    padding-top: 1.49rem;
+    text-align: center;
+    line-height: 1;
+
+    h6 {
+      font-size: 0.5rem;
+      color: #333;
+      padding-bottom: 0.35rem;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 1rem;
+        bottom: 0;
+        left: 50%;
+        margin-left: -0.5rem;
+        height: 0;
+        border-top: 0.04rem solid #a6e0e7;
+      }
+    }
+
+    p {
+      font-size: 0.24rem;
+      color: #666;
+      margin: 0.37rem 0 0.7rem 0;
+
+    }
+  }
+
+  .box-bd {
+    ul {
+      margin: 0 0.4rem;
+      overflow: hidden;
+    }
+
+    li {
+      width: 100%;
+      padding: 0.2rem 0;
+      border-bottom: 0.01rem solid rgba(210,210,210, .5);
+    }
+
+    li:last-child{
+      border: none;
+    }
+
+    .colum {
+      margin: 0 11px;
+      text-align: center;
+      padding-bottom: 30px;
+
+      &:hover {
+        background: #fff;
+      }
+    }
+    .pic{
+      width: 2.7rem;
+      height: 1.6rem;
+      overflow: hidden;
+      margin-right: 0.24rem;
+      background: #f3f3f3;
+    }
+
+    img {
+      width: 2.7rem;
+      height: 1.6rem;
+    }
+
+    .date {
+      font-size: 0.2rem;
+      color: #333;
+      text-align: left;
+    }
+
+    .desc {
+      font-size: 0.26rem;
+      color: #666;
+      text-align: left;
+      margin-top: 0.06rem;
+      line-height: 0.35rem;
+      height: 0.7rem;
+      overflow: hidden;
+      margin-bottom: 0.6rem;
+    }
+
+    .enter {
+      color: #999;
+      font-size: 0.2rem;
+    }
+  }
+
+  .box-fd {
+    padding: 0.39rem 0.4rem 0.68rem 0.4rem;
+    text-align: center;
+
+    a {
+      border: 0.01rem solid rgba(164,168,159,.5);
+      display: flex;
+      height: 0.6rem;
+      justify-content: center;
+      align-items: center;
+      color: #999;
+      font-size: 0.25rem;
+      border-radius: 0.3rem;
+      vertical-align: baseline;
+    }
+  }
+}
+
+.dwload {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 434px;
+  height: 260px;
+  margin-left: -559px;
+  margin-top: -92px;
+
+  h1 {
+    font-size: 66px;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  img {
+    float: left;
+    width: 150px;
+    height: 150px;
+  }
+
+  .dbtn {
+    width: 252px;
+    float: right;
+
+    a {
+      display: block;
+      width: 200px;
+      height: 58px;
+      line-height: 58px;
+      font-size: 18px;
+      border: 1px solid #fff;
+      border-radius: 47px;
+      margin-bottom: 32px;
+    }
+
+    .icon {
+      margin-left: 22px;
+    }
+
+    .icon-ios {
+      background-position: -147px 0;
+    }
+
+    .icon-andriod {
+      background-position: -121px 0;
+    }
+  }
+}

@@ -1,0 +1,363 @@
+<!-- 整体块 -->
+{% extends 'public/layout.html' %}
+
+<!-- 主内容 -->
+{% block content %}
+
+@@include('./public/header.html')
+
+<div class="content">
+  <div class="banner">
+    <img src="images/about/about_header.jpg" alt="" />
+  </div>
+  <!-- 二级标题 -->
+  <div class="sub_title">企业文化</div>
+  <div class="item item_culture">
+    <!-- <img src="images/about/about_item_2.jpg" alt=""> -->
+    <div class="left-item">
+      <div class="i-item">
+        <h4>企业愿景:</h4>
+        <p>共创百年商业生态圈，共筑中国梦</p>
+      </div>
+
+      <div class="i-item">
+        <h4>企业使命:</h4>
+        <p>提供实现梦想的平台</p>
+      </div>
+
+      <div class="i-item">
+        <h4>经营理念:</h4>
+        <p>以人为本，顾客至上，创新发展，共赢未来</p>
+      </div>
+
+      <div class="i-item">
+        <h4>商业宗旨:</h4>
+        <p>捍卫商业信誉，确保产品质量，提供优质服务</p>
+      </div>
+
+      <div class="i-item">
+        <h4>核心价值观:</h4>
+        <p>成就别人，成就自己</p>
+      </div>
+    </div>
+    <div class="right-item">
+      <img src="images/about/a-item.jpg" alt="" />
+    </div>
+  </div>
+  <!-- 二级标题 -->
+  <div class="sub_title">企业大事件</div>
+  <div class="item item_event">
+    <ul class="y_list">
+      <li class="y_item active">
+        <div class="y_title">
+          <span class="y_num">2018</span>
+          <span class="y_arrow"></span>
+          <span class="circle"></span>
+          <span class="text" style="display: none;">2018年精选速购大事件</span>
+        </div>
+        <div class="c_wrap">
+          <div class="c_line" style="display: none;"></div>
+          <ul class="c_list" style="display: block;">
+            <li class="c_item">
+              <div class="c_month">
+                <p>12月</p>
+                <p>2018</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">精选速购推出“超级团购”，每日商城上会提供多款超级团购商品，代理自购/推荐都可以拿现金奖励</div>
+            </li>
+            <li class="c_item">
+              <div class="c_month">
+                <p>12月</p>
+                <p>2018</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">精选速购与京东商城强强联手，共同发展社交新零售，携手京东商城推出全新购物模式</div>
+            </li>
+            <li class="c_item">
+              <div class="c_month">
+                <p>11月</p>
+                <p>2018</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">精选速购在长沙举办了品牌代言人签约会，著名主持人李维嘉正式入驻精选速购</div>
+            </li>
+            <li class="c_item">
+              <div class="c_month">
+                <p>10月</p>
+                <p>2018</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">精选速购董事长孙高金先生受邀出席第七届“全国商务诚信建设大会”</div>
+            </li>
+            <li class="c_item">
+              <div class="c_month">
+                <p>10月</p>
+                <p>2018</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">精选速购敢于领先行业，正式提出《品牌五大承诺》：精选正品，不满意包退，质量问题包赔，买贵两倍赔付，超时赔付，同时推出品牌系列片之《信任的力量》</div>
+            </li>
+            <li class="c_item">
+              <div class="c_month">
+                <p>9月</p>
+                <p>2018</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">精选速购四周年庆暨万店连锁计划发布会在广州地标建筑——广州塔盛大开启。</div>
+            </li>
+            <li class="c_item">
+              <div class="c_month">
+                <p>8月</p>
+                <p>2018</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">精选速购引领行业新高度，正式提出商品品控三大标准：安全、品质、低价，推出品牌宣传片——《凡精选•必精品》</div>
+            </li>
+            <li class="c_item">
+              <div class="c_month">
+                <p>7月</p>
+                <p>2018</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">精选速购跨界合作，作为赞助商全程赞助演员杨业明24岁的生日会</div>
+            </li>
+            <li class="c_item">
+              <div class="c_month">
+                <p>6月</p>
+                <p>2018</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">精选速购为了优化代理收入结构，提供更好的创业平台，发布全新的激励政策</div>
+            </li>
+            <li class="c_item">
+              <div class="c_month">
+                <p>5月</p>
+                <p>2018</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">精选速购同城线下交流会正式拉开帷幕，广州站、佛山站、东莞站和深圳站已正式开启</div>
+            </li>
+            <li class="c_item">
+              <div class="c_month">
+                <p>4月</p>
+                <p>2018</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">精选速购商城新模式正式上线！精选速购为新版本豪掷10亿，为用户准备了1000万盒免费面膜招商。</div>
+            </li>
+            <li class="c_item">
+              <div class="c_month">
+                <p>4月</p>
+                <p>2018</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">精选速购“破局•赢未来”2018品牌合作发布会在穗隆重举行</div>
+            </li>
+            <li class="c_item">
+              <div class="c_month">
+                <p>1月</p>
+                <p>2018</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">精选速购宣传片《致不甘平凡的你》全网首发</div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="y_item">
+        <div class="y_title">
+          <span class="y_num">2017</span>
+          <span class="y_arrow"></span>
+          <span class="circle"></span>
+          <span class="text">2017年精选速购大事件</span>
+        </div>
+        <div class="c_wrap">
+          <div class="c_line"></div>
+          <ul class="c_list">
+            <li class="c_item">
+              <div class="c_month">
+                <p>12月</p>
+                <p>2017</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">中国国际电子商务中心认证精选速购为诚信企业</div>
+            </li>
+            <li class="c_item">
+              <div class="c_month">
+                <p>11月</p>
+                <p>2017</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">精选速购受邀成为“广东省化妆品技术协会”副会长单位</div>
+            </li>
+            <li class="c_item">
+              <div class="c_month">
+                <p>9月</p>
+                <p>2017</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">中国一线明星何润东加盟成为精选速购形象代言人</div>
+            </li>
+            <li class="c_item">
+              <div class="c_month">
+                <p>7月</p>
+                <p>2017</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">精选速购再创新模式，创立创业基金，轻创业再升级</div>
+            </li>
+            <li class="c_item">
+              <div class="c_month">
+                <p>6月</p>
+                <p>2017</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">精选速购平台知名品牌加盟数量同比去年增长300%</div>
+            </li>
+            <li class="c_item">
+              <div class="c_month">
+                <p>5月</p>
+                <p>2017</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">精选速购智能云仓库全面升级，布局全国仓储网络，加快配送时效</div>
+            </li>
+            <li class="c_item">
+              <div class="c_month">
+                <p>4月</p>
+                <p>2017</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">精选速购APP再优化，再次提升用户权益</div>
+            </li>
+            <li class="c_item">
+              <div class="c_month">
+                <p>4月</p>
+                <p>2017</p>
+              </div>
+              <span class="c_circle"></span>
+              <div class="c_text">精选速购客服自助售后系统全面升级</div>
+            </li>
+            <li cl </ul> </div> </li> <li class="y_item">
+              <div class="y_title">
+                <span class="y_num">2016</span>
+                <span class="y_arrow"></span>
+                <span class="circle"></span>
+                <span class="text">2016年精选速购大事件</span>
+              </div>
+              <div class="c_wrap">
+                <div class="c_line"></div>
+                <ul class="c_list">
+                  <li class="c_item">
+                    <div class="c_month">
+                      <p>6月</p>
+                      <p>2016</p>
+                    </div>
+                    <span class="c_circle"></span>
+                    <div class="c_text">精选速购开启中国财富大学全国巡讲，在广州、南宁、郑州举行3场万人思维巅峰交流盛会</div>
+                  </li>
+                  <li class="c_item">
+                    <div class="c_month">
+                      <p>6月</p>
+                      <p>2016</p>
+                    </div>
+                    <span class="c_circle"></span>
+                    <div class="c_text">全国工商联协会指定精选速购为行业教学基地</div>
+                  </li>
+                  <li class="c_item">
+                    <div class="c_month">
+                      <p>4月</p>
+                      <p>2016</p>
+                    </div>
+                    <span class="c_circle"></span>
+                    <div class="c_text">深圳前海股权交易中心成功挂牌，精选速购步入高速发展阶段</div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="y_item">
+              <div class="y_title">
+                <span class="y_num">2015</span>
+                <span class="y_arrow"></span>
+                <span class="circle"></span>
+                <span class="text">2015年精选速购大事件</span>
+              </div>
+              <div class="c_wrap">
+                <div class="c_line"></div>
+                <ul class="c_list">
+                  <li class="c_item">
+                    <div class="c_month">
+                      <p>7月</p>
+                      <p>2015</p>
+                    </div>
+                    <span class="c_circle"></span>
+                    <div class="c_text">精选速购上线一年，商城日订单突破20,000单</div>
+                  </li>
+                  <li class="c_item">
+                    <div class="c_month">
+                      <p>7月</p>
+                      <p>2015</p>
+                    </div>
+                    <span class="c_circle"></span>
+                    <div class="c_text">著名演员赵奕欢、著名主持人白羽分享精选速购</div>
+                  </li>
+                  <li class="c_item">
+                    <div class="c_month">
+                      <p>6月</p>
+                      <p>2015</p>
+                    </div>
+                    <span class="c_circle"></span>
+                    <div class="c_text">精选速购创始人孙高金受邀参与CCTV发现之旅《华商论见》节目录制并成为节目官方合作伙伴</div>
+                  </li>
+                  <li class="c_item">
+                    <div class="c_month">
+                      <p>6月</p>
+                      <p>2015</p>
+                    </div>
+                    <span class="c_circle"></span>
+                    <div class="c_text">精选速购创始人孙高金在中国国际经济技术合作促进会中荣获“爱心企业家”称号，广州精选速购网络科技有限公司被誉为“爱心之家”，荣获理事单位称号。</div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="y_item">
+              <div class="y_title">
+                <span class="y_num">2014</span>
+                <span class="y_arrow"></span>
+                <span class="circle"></span>
+                <span class="text">2014年精选速购大事件</span>
+              </div>
+              <div class="c_wrap">
+                <div class="c_c">
+                  <div class="c_line"></div>
+                  <ul class="c_list">
+                    <li class="c_item">
+                      <div class="c_month">
+                        <p>9月</p>
+                        <p>2014</p>
+                      </div>
+                      <span class="c_circle"></span>
+                      <div class="c_text">精选速购商城，正式上线</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- 二级标题 -->
+        <div class="sub_title">企业荣誉</div>
+        <div class="item item_honor">
+          <img src="images/about/about_item_3.jpg" alt="" />
+        </div>
+        <!-- 二级标题 -->
+        <div class="sub_title">员工风采</div>
+        <div class="item item_style">
+          <img src="images/about/about_item_4.jpg" alt="" />
+        </div>
+  </div>
+
+  @@include('./public/footer.html')
+
+  {% endblock %}

@@ -1,0 +1,83 @@
+<!-- 整体块 -->
+{% extends 'public/layout.html' %}
+
+<!-- 主内容 -->
+{% block content %}
+
+@@include('./public/header.html')
+
+<div class="content">
+  <div class="item-pic">
+    <img src="images/store/p1.jpg" />
+    <div class="arrow"></div>
+  </div>
+  <div class="video-wrap">
+    <div class="video-cover">
+      <img class="cover" src="images/store/p2.jpg" />
+      <img src="images/play-btn.png" class="play-btn" />
+    </div>
+    <div class="video-content">
+      <img class="video-bg" src="images/store/video-bg.png" alt="" />
+      <div class="video-box">
+        <video src="video/2.mp4" id="video" webkit-playsinline="true" playsinline="true" x-webkit-airplay="allow"
+          x5-video-player-type="h5" x5-video-orientation="portraint" preload="metadata" controls="controls"></video>
+      </div>
+    </div>
+  </div>
+  <div class="item-pic"><img src="images/store/p3.jpg" /></div>
+  <div class="item-pic"><img src="images/store/p4.jpg" /></div>
+  <div class="item-pic"><img src="images/store/p5.jpg" /></div>
+  <div class="item-pic"><img src="images/store/p6.jpg" /></div>
+  <div class="item-pic"><img src="images/store/p7.jpg" /></div>
+  <div class="item-pic">
+    <img src="images/store/p8.jpg" />
+    <div class="swiper-wrap">
+      <div class="store-dsci">
+        <div class="inner store-box">
+          <div class="con">
+            <div class="sright pic-slide">
+              <div class="view">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide view-slide" style="background-image:url(./images/store/sv1.jpg)"></div>
+                    <div class="swiper-slide view-slide" style="background-image:url(./images/store/sv2.jpg)"></div>
+                    <div class="swiper-slide view-slide" style="background-image:url(./images/store/sv3.jpg)"></div>
+                    <div class="swiper-slide view-slide" style="background-image:url(./images/store/sv4.jpg)"></div>
+                    <div class="swiper-slide view-slide" style="background-image:url(./images/store/sv5.jpg)"></div>
+                    <div class="swiper-slide view-slide" style="background-image:url(./images/store/sv6.jpg)"></div>
+                    <div class="swiper-slide view-slide" style="background-image:url(./images/store/sv7.jpg)"></div>
+                    <div class="swiper-slide view-slide" style="background-image:url(./images/store/sv8.jpg)"></div>
+                  </div>
+                  <div class="swiper-pages"><span id="nowPage">01</span> / 08</div>
+                </div>
+              </div>
+              <div class="preview">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./images/store/sv_min_01.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./images/store/sv_min_02.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./images/store/sv_min_03.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./images/store/sv_min_04.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./images/store/sv_min_05.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./images/store/sv_min_06.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./images/store/sv_min_07.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./images/store/sv_min_08.jpg)"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="item-pic"><img src="images/store/p9.jpg" /></div>
+  <div class="item-pic"><img src="images/store/p10.jpg" /></div>
+  <div class="item-pic"><img src="images/store/p11.jpg" /></div>
+  <div class="item-pic"><img src="images/store/p12.jpg" /></div>
+  <div class="item-pic"><img src="images/store/p13.jpg" /></div>
+</div>
+
+@@include('./public/footer.html')
+
+{% endblock %}

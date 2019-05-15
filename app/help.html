@@ -1,0 +1,44 @@
+<!-- 整体块 -->
+{% extends 'public/layout.html' %}
+
+<!-- 主内容 -->
+{% block content %}
+
+@@include('./public/header.html')
+
+ <div class="content">
+   <!-- banner -->
+   <div class="banner">
+     <img src="images/help/help_header.jpg" alt="" />
+   </div>
+   <!-- contianer -->
+   <div class="contianer">
+     <div class="item">
+       <h4>Q：精选速购是正品吗？</h4>
+       <p>1、精选速购采用自营 + 品牌直供的模式，对于产品采购渠道严格审核，确保产品的质量；</p>
+       <p>2、精选速购拥有1600万用户，每年售卖上亿件商品，对于宝妈人群、家庭生活等方面的需求和痛点积累了大量宝贵原始数据，对于消费者体验的理解和需求满足会更加深刻，基础体验保障更好。</p>
+     </div>
+     <div class="item">
+       <h4>Q：如何联系精选速购？</h4>
+       <p>1、精选速购服务热线：400-851-6868</p>
+       <p>2、可在App内点击联系客服。</p>
+     </div>
+     <div class="item">
+       <h4>Q：如何登录精选速购App？</h4>
+       <p>提交个人相关信息，并确保被录入系统之后，可根据登记的手机号码，并获取动态验证码直接登录精选速购App，关联微信后可一键登陆精选速购App。精选速购严格遵守用户隐私协议。</p>
+     </div>
+     <div class="item">
+       <h4>Q:如何打造属于自己的精选速购店铺？</h4>
+       <p>1、开通精选速购之后，可以直接在后台里勾选商品进行上架。</p>
+       <p>2、如果有个性化需求，可以修改店铺头像、名称等个人信息，真正实现一键上货，轻松创业！</p>
+     </div>
+     <div class="item">
+       <h4>Q：买家需要下载精选速购App吗？</h4>
+       <p>店主可在微信内将店铺链接或者商品链接分享到朋友圈或者发送给朋友，买家在微信中收到链接打开即可购物，买家也可以下载精选速购App享受购物乐趣。</p>
+     </div>
+   </div>
+ </div>
+
+@@include('./public/footer.html')
+
+{% endblock %}

@@ -1,0 +1,15 @@
+<!-- 整体块 -->
+{% extends 'public/layout.html' %}
+
+<!-- 主内容 -->
+{% block content %}
+  
+  <!-- @@include('./public/header.html') -->
+
+  <div class="content">
+    {{author}}, {{headline}}
+  </div>
+  
+  <!-- @@include('./public/footer.html') -->
+
+{% endblock %}

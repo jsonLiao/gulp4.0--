@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="{{description}}">
+  <meta name="author" content="{{author}}">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>{{title}}</title>
+  <link rel="stylesheet" type="text/css" href="css/common.min.css">
+  <link rel="stylesheet" type="text/css" href="css/{{name}}.min.css">
+</head>
+
+<body>
+  <div class="pages pages-bt">
+    {% block content %}{% endblock %}
+  </div>
+  <script type="text/javascript" src="js/globle.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  {% if jsname != '' %}
+  <script type="text/javascript" src="js/{{jsname}}.js"></script>
+  {% endif %}
+</body>
+
+</html>

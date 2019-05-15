@@ -1,0 +1,150 @@
+/*方法归类*/
+
+/*
+* 适配置计算
+* @name 属性名
+* @px   属性值
+*/
+@function px2rem($px) {
+  $vm_fontsize: 75;
+  @return (($px/2) / $vm_fontsize) * 1rem;
+}
+
+/*
+* 多行显示... 
+* $clamp 行数 默认两行
+* 下面的autoprefixer off on 注释是防止webpack(optimize-css-assets-webpack-plugin插件) 
+* 打包的时候-webkit-box-orient: vertical;会被删除掉
+*/
+@mixin line-camp($clamp: 2) {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $clamp;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+}
+
+/*
+* 文字属性设置
+* $fontSize 字体大小
+* $color 颜色
+* $lineHeight 行高
+* $textAlign  位置 默认居左
+*/
+@mixin font-des-style($fontSize, $color, $lineHeight, $textAlign: left) {
+  line-height: px2rem($lineHeight);
+  font-size: px2rem($fontSize);
+  color: $color;
+  text-align: $textAlign;
+}
+
+/*背景色*/
+@mixin bg($background) {
+  background: $background;
+}
+
+/*1px 边框 缩放方法*/
+@mixin min-device-pixel-ratio($scale2, $scale3) {
+  @media screen and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2) {
+    transform: $scale2;
+  }
+
+  @media screen and (min-device-pixel-ratio: 3),
+  (-webkit-min-device-pixel-ratio: 3) {
+    transform: $scale3;
+  }
+}
+/*1px 边框*/
+@mixin border-1px($color: #ccc, $radius: 2px, $style: solid) {
+  position: relative;
+  &::before {
+    content: "";
+    pointer-events: none;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-origin: 0 0;
+    border: 1px $style $color;
+    border-radius: $radius;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2) {
+      width: 200%;
+      height: 200%;
+      border-radius: $radius * 2;
+      transform: scale(.5);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3) {
+      width: 300%;
+      height: 300%;
+      border-radius: $radius * 3;
+      transform: scale(.33);
+    }
+  }
+}
+/*1px 上边框*/
+@mixin border-top-1px($color: #ccc, $style: solid) {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-top: 1px $style $color;
+    transform-origin: 0 0;
+    @include min-device-pixel-ratio(scaleY(.5), scaleY(.33));
+  }
+}
+/**
+ * $color  边框颜色  默认 无
+ * $radius 边框圆角  默认 0
+ * $border 上右下左位置 默认全边框
+*/
+@mixin border($color, $radius:0, $border:all) {
+  position: relative;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @if $border==all {
+      border: 1px solid $color;
+    }
+
+    @else {
+      @each $member in $border {
+        border-#{$member}: 1px solid $color;
+      };
+    }
+
+    width: 200%;
+    height: 200%;
+    border-radius: $radius;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+
+    @media (-webkit-min-device-pixel-ratio:2.5) {
+      width: 300%;
+      height: 300%;
+      -webkit-transform: scale(.33333);
+      transform: scale(.33333);
+      border-radius: $radius * 3;
+    }
+
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    box-sizing: border-box;
+  }
+}

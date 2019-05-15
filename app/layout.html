@@ -1,0 +1,19 @@
+<!-- 整体块 -->
+{% extends 'public/layout.html' %}
+
+<!-- 主内容 -->
+{% block content %}
+
+<!-- @@include('./public/header.html') -->
+ <div class="header">
+   SASS 标题
+ </div>
+<div class="content">
+ <div class="btn">1像素边框</div>
+ <div class="border_bottom font-description">1像素下边框</div>
+ <div class="border-box">1像素边框</div>
+</div>
+
+<!-- @@include('./public/footer.html') -->
+
+{% endblock %}

@@ -1,0 +1,114 @@
+// 自适应方式2
+// html {
+//   font-size: 13.333333333333334vw;
+// }
+
+/**
+** sass 版本页面自适应方式2
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*从 html元素继承 box-sizing*/
+html {
+  box-sizing: border-box;
+}
+
+*,*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*引入归类方法*/
+@import 'mixins';
+
+$vm_fontsize: 75;
+$vm_design: 750;
+
+html {
+  font-size: ($vm_fontsize / ($vm_design / 2)) * 100vw;
+
+  @media screen and (max-width: 320px) {
+    font-size: 64px;
+  }
+
+  @media screen and (min-width: 640px) {
+    font-size: 108px;
+  }
+}
+
+body {
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.header {
+  // less
+  // .px2rem(height, 102);
+  // .font-des-style(40, #fff, 102, center);
+  // .bg(#f00);
+  // sass
+  height: px2rem(102);
+  @include font-des-style(40, #fff, 102, center);
+  @include bg(#f00)
+}
+
+.font-description {
+  // .font-des-style(30, #000, 80);
+  // .line-camp(2);
+  @include font-des-style(30, #000, 80);
+  @include line-camp(2)
+}
+
+/*1px 边框*/
+.border_bottom {
+  overflow: hidden;
+  position: relative;
+  border: none !important;
+}
+
+.border_bottom:after {
+  content: ".";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #999;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+.btn{
+  // .px2rem(margin, 40);
+  // .border-1px(#000);
+  // .font-des-style(40, #000, 80, center);
+  margin: px2rem(40);
+  @include border-1px(#000);
+  @include font-des-style(40, #000, 80, center);
+}
+
+
+/*文字两端对齐*/
+.word-space-bwt {
+  width: 100px;
+  border: 1px solid red;
+  text-align: justify;
+  text-align-last: justify;
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.border-box{
+  margin: px2rem(40);
+  @include font-des-style(30, #000, 80);
+  @include border(#000)
+}
