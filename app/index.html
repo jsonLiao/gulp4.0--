@@ -4,7 +4,10 @@
 <!-- 主内容 s-->
 {% block content %}
 
-@@include('./public/header.html')
+<!-- @@include('./public/header.html') -->
+@@include('./public/header.html',{
+"index": "active"
+})
 
 <!-- content s -->
 <div class="content">

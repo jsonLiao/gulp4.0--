@@ -1,5 +1,6 @@
 {
 	"name": "index",
 	"title": "首页",
-	"jsname": "index"
+	"jsname": "index",
+	"plguins": []
 }

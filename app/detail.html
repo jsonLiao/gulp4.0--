@@ -4,8 +4,10 @@
 <!-- 主内容 -->
 {% block content %}
 
-@@include('./public/header.html')
-
+<!-- @@include('./public/header.html') -->
+@@include('./public/header.html',{
+"detail": "active"
+})
 <div class="content inner_c">
   <div class="content-s">
     <div class="news-cont">

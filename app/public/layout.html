@@ -18,6 +18,11 @@
   </div>
   <script type="text/javascript" src="js/globle.js"></script>
   <script type="text/javascript" src="js/common.js"></script>
+  {% if JSON.stringify(plguins).length > 0 %}
+    {% for i in plguins %}
+      <script type="text/javascript" src="js/{{i}}.js"></script>
+    {% endfor %}
+  {% endif %}
   {% if jsname != '' %}
   <script type="text/javascript" src="js/{{jsname}}.js"></script>
   {% endif %}

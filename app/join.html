@@ -4,7 +4,10 @@
 <!-- 主内容 -->
 {% block content %}
 
-@@include('./public/header.html')
+<!-- @@include('./public/header.html') -->
+@@include('./public/header.html',{
+"join": "active"
+})
 
 <div class="content">
   <div class="groupbg">

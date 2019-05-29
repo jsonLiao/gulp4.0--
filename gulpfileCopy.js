@@ -127,7 +127,14 @@ gulp.task('js', function () {
 
 //复制公共库目录下的所有内容
 gulp.task('copy', function () {
-  return gulp.src('app/libs/**')
+  return gulp.src([
+      'app/libs/jquery.min.js',
+      'app/libs/swiper.min.js',
+      'app/libs/TweenMax.min.js',
+      'app/libs/jquery.superscrollorama.js',
+      'app/libs/lazyimg.js',
+      'app/libs/scrollTop.js'
+    ])
     .pipe(concatJS('globle.js'))
     .pipe(gulp.dest(paths.scripts.dist));
 });
@@ -135,6 +142,7 @@ gulp.task('copy', function () {
 // 监听
 gulp.task('watchs', function () {
   gulp.watch(paths.html.app, gulp.series('html'));
+  gulp.watch(paths.html.all, gulp.series('html'));
   gulp.watch(paths.styles.app, gulp.series('css'));
   gulp.watch(paths.scripts.app, gulp.series('js'));
   gulp.watch(paths.images.app, gulp.series('img'));
